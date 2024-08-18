@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "vm-api"
+version = "0.1.0"
+description = "Hexagonal Arch Test"
+authors = ["adi-los <adilmrabti15@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.68.0"
+sqlalchemy = "^1.4.15"
+psycopg2 = "^2.9.1"
+pydantic = "^1.8.2"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
+[tool.poetry.scripts]
+vm_api = "vm_api.app.run:main"
